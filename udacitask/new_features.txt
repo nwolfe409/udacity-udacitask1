@@ -1,0 +1,5 @@
+# new_features.txt
+
+Feature #1: Added due date to item class
+Feature #2: Added option to print incomplete items only
+Feature #3: Remove all completed items from list

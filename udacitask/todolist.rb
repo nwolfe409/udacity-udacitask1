@@ -8,8 +8,8 @@ class TodoList
     @items = Array.new # Starts empty! No Items yet!
   end
      
-  def add_item(new_item)    # Creates a new Item and adds it to the array of Items
-    item = Item.new(new_item)
+  def add_item(new_item, due_date)    # Creates a new Item and adds it to the array of Items
+    item = Item.new(new_item, due_date)
     @items.push(item)
   end
     
@@ -26,9 +26,27 @@ class TodoList
     puts "#{title}"
     puts "*" * 25
     @items.each_with_index do |item, index|
-      puts "#{index + 1} - #{item.description}  Completed: #{item.completed_status}"
+      puts "#{index + 1} - #{item.description}  Completed: #{item.completed_status} Due date: #{item.due_date}"
     end
   end 
+  
+    def print_incomplete
+    @items.each_with_index do |item, index|
+      if item.completed_status == false 
+          puts "#{index + 1} - #{item.description}  Completed: #{item.completed_status}"
+    end
+      end
+  end
+  
+  def remove_completed
+    @items.each_with_index do |item, index|
+      puts "iteration #{index}"
+      if item.completed_status == true 
+        @items.delete_at(index)
+      end
+    end
+  end
+      
   
   def update_title(new_title)
     @title = new_title
@@ -37,10 +55,11 @@ class TodoList
 end
 
 class Item
-  attr_reader :description, :completed_status
-  def initialize(item_description)  # Initialize item with a description and marked as not complete
+  attr_reader :description, :completed_status, :due_date
+  def initialize(item_description, due_date)  # Initialize item with a description and marked as not complete
     @description = item_description
     @completed_status = false
+    @due_date = due_date
   end
      
   def complete_item

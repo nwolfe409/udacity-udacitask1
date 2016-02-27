@@ -4,10 +4,10 @@ require_relative 'todolist.rb'
 my_list = TodoList.new("List of The Things to do")
 
 # Add four new items
-my_list.add_item "Bathe the cat"
-my_list.add_item "Walk the dog"
-my_list.add_item "Finish solving world peace"
-my_list.add_item "Go shopping"
+my_list.add_item "Bathe the cat", "2/26"
+my_list.add_item "Walk the dog", "2/26"
+my_list.add_item "Finish solving world peace", "3/26"
+my_list.add_item "Go shopping", "2/27"
 
 # Print the list
 my_list.print_list
@@ -34,4 +34,13 @@ my_list.print_list
 my_list.update_title "Stuff"
 
 # Print the list
+my_list.print_list
+
+#print incomplete items only
+my_list.print_incomplete
+
+#remove completed items
+my_list.remove_completed
+
+#print the list 
 my_list.print_list
