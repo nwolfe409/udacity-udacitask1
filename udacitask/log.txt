@@ -27,3 +27,50 @@ Author: Nathan Wolfe <nwolfe409@gmail.com>
 Date:   Thu Feb 25 02:40:19 2016 +0000
 
     initial commit
+commit 8f2f992acf2b284750781d7b884932f28c08198b
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Sat Feb 27 17:06:48 2016 +0000
+
+    Moved completed? method into Item class
+
+commit 7e62ec08e722c512fa11f33f5a4db421abe783f9
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Sat Feb 27 03:01:59 2016 +0000
+
+    Update method for ?
+
+commit 3909eca0dba2c996c3cac112df2a9f3540c304ae
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Sat Feb 27 02:39:31 2016 +0000
+
+    submitted project code
+
+commit 1b50a614f8fec8db02d79cf0106641675f0ce3d5
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Sat Feb 27 02:36:48 2016 +0000
+
+    refactored code ready for submission
+
+commit 312f5a0bdafdb81c46a74e84bdea552d1c78dd8a
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Sat Feb 27 02:21:46 2016 +0000
+
+    working code with added features
+
+commit bd9a72037d63186489e4c79dbb91fdeeb66fb6d6
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Fri Feb 26 04:03:27 2016 +0000
+
+    Working base code to meet requiremets of project
+
+commit 45ed99aa8bc19d03b5f3a05c576319bab357faf4
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Thu Feb 25 03:27:17 2016 +0000
+
+    project prep completed
+
+commit 253c50789a0a05c700085aa774de92e2351be9c6
+Author: Nathan Wolfe <nwolfe409@gmail.com>
+Date:   Thu Feb 25 02:40:19 2016 +0000
+
+    initial commit
