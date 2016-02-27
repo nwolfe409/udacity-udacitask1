@@ -20,16 +20,12 @@ class TodoList
   def complete(num) #marks item as complete
     @items[num-1].complete_item
   end
-  
-  def completed? 
-      item.completed_status 
-  end
-  
+
   def print_list #prints the current contents of the todo list
     puts "*" * 25
     puts "#{title}"
     puts "*" * 25
-    @items.each_with_index { |item, index| puts "#{index + 1} - #{item.description}  Completed: #{completed?} Due date: #{item.due_date}" }
+    @items.each_with_index { |item, index| puts "#{index + 1} - #{item.description}  Completed: #{item.completed?} Due date: #{item.due_date}" }
   end 
   
   def print_incomplete # prints only the imcomplete items
@@ -39,7 +35,7 @@ class TodoList
     puts "Incomplete items"
     puts "*" * 25
     @items.each_with_index do |item, index|
-      puts "#{index + 1} - #{item.description} Completed: #{completed?}" if item.completed_status == false 
+      puts "#{index + 1} - #{item.description} Completed: #{item.completed?} Due date: #{item.due_date}" if item.completed_status == false 
     end
   end
   
@@ -66,7 +62,11 @@ class Item
     @completed_status = false
     @due_date = due_date
   end
-     
+  
+  def completed? 
+      @completed_status 
+  end
+  
   def complete_item
     @completed_status=true
   end
